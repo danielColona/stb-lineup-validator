@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <title>Painel de alertas: últimos 3 eventos com print e horário</title>
+  <defs>
+    <pattern id="freeze2" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#4a4f59"/>
+      <rect width="7" height="14" fill="#555b66"/>
+    </pattern>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="420" fill="#0f1116"/>
+  <rect width="900" height="52" fill="#1b1f27"/>
+  <line x1="0" y1="52" x2="900" y2="52" stroke="#444"/>
+  <text x="450" y="35" fill="#fff" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="0.5">HEADEND · ALERTAS</text>
+
+  <!-- Card novo (< 5 min): borda vermelha pulsante -->
+  <g>
+    <rect x="16" y="70" width="276" height="330" rx="4" fill="#1b1f27" stroke="#ff3b3b" stroke-width="2" filter="url(#glow)"/>
+    <text x="28" y="100" fill="#FFA040" font-size="18" font-weight="700">STB 2 · Site B</text>
+    <text x="280" y="100" fill="#fff" font-size="15" font-weight="700" text-anchor="end">03:12:41</text>
+    <rect x="24" y="112" width="260" height="146" rx="2" fill="#000"/>
+    <text x="28" y="284" fill="#ff5c5c" font-size="14" font-weight="700">TELA PRETA</text>
+    <text x="28" y="306" fill="#9aa3b2" font-size="13">05/03/2026 · CH 205</text>
+    <rect x="28" y="326" width="96" height="24" rx="12" fill="#3a0f0f" stroke="#ff3b3b"/>
+    <text x="76" y="343" fill="#ff8a8a" font-size="12" font-weight="700" text-anchor="middle">NOVO</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g>
+    <rect x="312" y="70" width="276" height="330" rx="4" fill="#1b1f27"/>
+    <text x="324" y="100" fill="#4a8fe8" font-size="18" font-weight="700">STB 3 · Site C</text>
+    <text x="576" y="100" fill="#fff" font-size="15" font-weight="700" text-anchor="end">02:47:09</text>
+    <rect x="320" y="112" width="260" height="146" rx="2" fill="url(#freeze2)"/>
+    <text x="450" y="190" fill="#e0e0e0" font-size="14" text-anchor="middle">quadro estático</text>
+    <text x="324" y="284" fill="#ff5c5c" font-size="14" font-weight="700">VÍDEO CONGELADO</text>
+    <text x="324" y="306" fill="#9aa3b2" font-size="13">05/03/2026 · CH 310</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g>
+    <rect x="608" y="70" width="276" height="330" rx="4" fill="#1b1f27"/>
+    <text x="620" y="100" fill="#2ECC71" font-size="18" font-weight="700">STB 1 · Site A</text>
+    <text x="872" y="100" fill="#fff" font-size="15" font-weight="700" text-anchor="end">01:05:33</text>
+    <rect x="616" y="112" width="260" height="146" rx="2" fill="#0a0a0a"/>
+    <text x="746" y="190" fill="#6b6b6b" font-size="14" text-anchor="middle">sem sinal</text>
+    <text x="620" y="284" fill="#ff5c5c" font-size="14" font-weight="700">TELA PRETA</text>
+    <text x="620" y="306" fill="#9aa3b2" font-size="13">05/03/2026 · CH 101</text>
+  </g>
+</svg>

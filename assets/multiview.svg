@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Segoe UI, Arial, sans-serif">
+  <title>Multiview: 4 STBs em mosaico com painel de alertas</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a6ea5"/>
+      <stop offset="1" stop-color="#9cc3e6"/>
+    </linearGradient>
+    <linearGradient id="studio" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b1d4a"/>
+      <stop offset="1" stop-color="#6b3fa0"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f8f4e"/>
+      <stop offset="1" stop-color="#1d6b38"/>
+    </linearGradient>
+    <pattern id="freeze" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="12" fill="#4a4f59"/>
+      <rect width="6" height="12" fill="#555b66"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="720" fill="#0b0d12"/>
+
+  <!-- STB 1: paisagem -->
+  <g>
+    <rect x="4" y="4" width="474" height="354" fill="url(#sky)"/>
+    <circle cx="380" cy="80" r="34" fill="#ffe08a"/>
+    <path d="M4 260 L120 170 L210 230 L320 140 L478 250 L478 358 L4 358 Z" fill="#2d5a3d"/>
+    <path d="M4 300 L150 250 L300 290 L478 260 L478 358 L4 358 Z" fill="#3f7a52"/>
+    <rect x="4" y="4" width="474" height="38" fill="#000" opacity="0.55"/>
+    <text x="16" y="30" fill="#2ECC71" font-size="20" font-weight="700">STB 1 · Site A</text>
+    <text x="466" y="30" fill="#e6e6e6" font-size="16" text-anchor="end">CH 101</text>
+  </g>
+
+  <!-- STB 2: preto -> alerta -->
+  <g>
+    <rect x="482" y="4" width="474" height="354" fill="#000"/>
+    <rect x="483.5" y="5.5" width="471" height="351" fill="none" stroke="#ff3b3b" stroke-width="3"/>
+    <rect x="482" y="4" width="474" height="38" fill="#1b0000" opacity="0.9"/>
+    <text x="494" y="30" fill="#FFA040" font-size="20" font-weight="700">STB 2 · Site B</text>
+    <text x="944" y="30" fill="#e6e6e6" font-size="16" text-anchor="end">CH 205</text>
+    <rect x="599" y="160" width="240" height="44" rx="6" fill="#ff3b3b"/>
+    <text x="719" y="189" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">TELA PRETA · 8 s</text>
+  </g>
+
+  <!-- STB 3: estúdio -->
+  <g>
+    <rect x="4" y="362" width="474" height="354" fill="url(#studio)"/>
+    <rect x="60" y="440" width="150" height="190" rx="70" fill="#d9b48f"/>
+    <rect x="40" y="600" width="190" height="116" rx="20" fill="#24324a"/>
+    <rect x="270" y="470" width="180" height="110" rx="6" fill="#0f1830" stroke="#8fb4ff" stroke-width="2"/>
+    <rect x="4" y="650" width="474" height="40" fill="#c62828"/>
+    <text x="16" y="677" fill="#fff" font-size="16" font-weight="700">AO VIVO</text>
+    <rect x="4" y="362" width="474" height="38" fill="#000" opacity="0.55"/>
+    <text x="16" y="388" fill="#4a8fe8" font-size="20" font-weight="700">STB 3 · Site C</text>
+    <text x="466" y="388" fill="#e6e6e6" font-size="16" text-anchor="end">CH 310</text>
+  </g>
+
+  <!-- STB 4: esporte -->
+  <g>
+    <rect x="482" y="362" width="474" height="354" fill="url(#field)"/>
+    <path d="M482 540 H956" stroke="#e8f5e9" stroke-width="3" opacity="0.8"/>
+    <circle cx="719" cy="540" r="60" fill="none" stroke="#e8f5e9" stroke-width="3" opacity="0.8"/>
+    <rect x="482" y="470" width="60" height="140" fill="none" stroke="#e8f5e9" stroke-width="3" opacity="0.8"/>
+    <rect x="896" y="470" width="60" height="140" fill="none" stroke="#e8f5e9" stroke-width="3" opacity="0.8"/>
+    <rect x="500" y="414" width="150" height="30" rx="4" fill="#111" opacity="0.8"/>
+    <text x="575" y="435" fill="#fff" font-size="16" font-weight="700" text-anchor="middle">CASA 1 × 0 FORA</text>
+    <rect x="482" y="362" width="474" height="38" fill="#000" opacity="0.55"/>
+    <text x="494" y="388" fill="#c0c0c0" font-size="20" font-weight="700">STB 4 · Site D</text>
+    <text x="944" y="388" fill="#e6e6e6" font-size="16" text-anchor="end">CH 412</text>
+  </g>
+
+  <!-- Painel de alertas -->
+  <g>
+    <rect x="960" y="4" width="316" height="712" fill="#0f1116"/>
+    <rect x="960" y="4" width="316" height="44" fill="#1b1f27"/>
+    <line x1="960" y1="48" x2="1276" y2="48" stroke="#444"/>
+    <text x="1118" y="33" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">HEADEND · ALERTAS</text>
+
+    <!-- card 1 (novo, piscando) -->
+    <rect x="966" y="54" width="304" height="214" rx="3" fill="#1b1f27" stroke="#ff3b3b" stroke-width="2"/>
+    <text x="974" y="78" fill="#FFA040" font-size="16" font-weight="700">STB 2 · Site B</text>
+    <text x="1262" y="78" fill="#fff" font-size="14" font-weight="700" text-anchor="end">03:12:41</text>
+    <rect x="972" y="88" width="292" height="172" rx="2" fill="#000"/>
+
+    <!-- card 2 -->
+    <rect x="966" y="274" width="304" height="214" rx="3" fill="#1b1f27"/>
+    <text x="974" y="298" fill="#4a8fe8" font-size="16" font-weight="700">STB 3 · Site C</text>
+    <text x="1262" y="298" fill="#fff" font-size="14" font-weight="700" text-anchor="end">02:47:09</text>
+    <rect x="972" y="308" width="292" height="172" rx="2" fill="url(#freeze)"/>
+    <text x="1118" y="400" fill="#d0d0d0" font-size="14" text-anchor="middle">imagem congelada</text>
+
+    <!-- card 3 -->
+    <rect x="966" y="494" width="304" height="216" rx="3" fill="#1b1f27"/>
+    <text x="974" y="518" fill="#2ECC71" font-size="16" font-weight="700">STB 1 · Site A</text>
+    <text x="1262" y="518" fill="#fff" font-size="14" font-weight="700" text-anchor="end">01:05:33</text>
+    <rect x="972" y="528" width="292" height="174" rx="2" fill="#0a0a0a"/>
+    <text x="1118" y="620" fill="#6b6b6b" font-size="14" text-anchor="middle">sem sinal</text>
+  </g>
+</svg>
