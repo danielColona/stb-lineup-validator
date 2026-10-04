@@ -14,6 +14,12 @@
 
 <sub>Mockup ilustrativo do multiview: quatro STBs em mosaico, uma em tela preta sob alerta, e o painel com os últimos eventos.</sub>
 
+### 🎬 Demonstração em vídeo
+
+[![Assistir à demonstração no LinkedIn](https://img.shields.io/badge/Assistir%20%C3%A0%20demonstra%C3%A7%C3%A3o-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/feed/update/urn:li:activity:7443788460420890624/)
+
+A solução em operação: o multiview no OBS, o stream RTMP chegando ao VLC e os alertas (print, evidência em vídeo e rotina periódica) chegando ao grupo do Telegram.
+
 ---
 
 ## O problema
